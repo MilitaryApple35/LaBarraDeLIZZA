@@ -206,6 +206,7 @@ class frame(tk.Frame):
             messagebox.showerror(titulo, mensaje)
         
     def eliminarDatos(self):
+        # Funcion que elimina la selección que se ha realizado en la tabla
         try:
             selection = self.tabla.selection()
             item = self.tabla.item(selection[0])
